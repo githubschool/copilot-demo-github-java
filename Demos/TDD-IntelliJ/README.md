@@ -1,8 +1,8 @@
 # Test Driven Development (TDD) with Java through IntelliJ
 
-**Test-Driven Development (TDD)** is a software develpment proces relying on software requirements being converted to test cases before software is fully developed. Since unit testing or any type of functional or performance testings are very important in Java development, TDD practice is very highly encouraged among Java developers. Copilot is a great tool to help Java developers to write unit tests for their Java code as it can helps to bootstrap a lot of repetitive code for unit tests.
+**Test-Driven Development (TDD)** is a software develpment proces relying on software requirements being converted to test cases before software is fully developed. Since unit testing or any type of functional or performance testing is very important in Java development, TDD is highly encouraged among Java developers. Copilot is a great tool to help Java developers write unit tests for their Java code as it can helps to bootstrap a lot of repetitive code for unit tests.
 
-As you can see in the picture below, TDD process involves writing tests first, see if it fails (goes to red), then write code to make the test pass (green). Copilot can help you to write the test code and you can focus on writing the code to make the test pass.
+As you can see in the picture below, the TDD process involves writing tests first, see if it fails (red), then write code to make the test pass (green). Copilot can help you write the test code and you can focus on writing the code to make the test pass.
 
 ![TDD](./images/tdd.jpg)
 
