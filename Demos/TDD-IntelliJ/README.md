@@ -19,33 +19,33 @@ This demo is focusing around how to use Copilot to easily write unit tests for J
 
 ## Steps
 
-Welcome! In this starting Copilot demo for **Test Driven Development (TDD) using IntelliJ**, you will start with a sample **Java + Maven** projects that contain some starting codes that can help you to implement TDD using Copilot.
+Welcome! In this Copilot demo for **Test Driven Development (TDD) using IntelliJ**, you will start with a sample **Java + Maven** project that contains some starter code that can help you to implement TDD using Copilot.
 
 ### Step 1: Download a sample project
 
-First, you need to download a sample project called [**TDDJava**](./TDDJava). This is a simple Java project that contains some starting codes that can help you to implement TDD using Copilot.
+First, you need to download a sample project called [**TDDJava**](./TDDJava). This is a simple Java project that contains some starter code that can help you to implement TDD using Copilot.
 
 ### Step 2: Open the project in IntelliJ
 
-Open the project in IntelliJ. You can open the project by clicking on **Open** in IntelliJ and select the **TDDJava** folder.
+Open the project in IntelliJ. You can open the project by clicking on **Open** in IntelliJ and selecting the **TDDJava** folder.
 
 ![Open Project](./images/1_OpenProject.jpg)
 
-When you see a message like below, select **Trust Project**.
+When you see a message like the one below, select **Trust Project**.
 
 ![Trust Project](./images/2_TrustProject.jpg)
 
 ### Step 3: Explore code and fix some structure
 
-You can explore the code in the project. You can see that there is a Java class called `StringCalculator` under `src/main/java` and a sample unit test class called `StringCalculatorTest` under `src/test/java`. You can also see that there is a `pom.xml` file that contains Maven configuration for this project.
+You can explore the code in the project. You can see that there is a Java class called `StringCalculator` under `src/main/java` and a sample unit test class called `StringCalculatorTest` under `src/test/java`. You can also see that there is a `pom.xml` file that contains the Maven configuration for this project.
 
 ![Explore Code](./images/3_GeneralProject.jpg)
 
-You might need to configure Maven if you have some problem building because the project requires few dependencies like Junit. In addition, your test code `StringCalculatorTest` might not recognized as a Java file in some case. If that is a case, please follow this optional step.
+You might need to configure Maven if you run into some problems building because the project requires a few dependencies like Junit. In addition, your test code `StringCalculatorTest` might not recognized as a Java file in some cases. If that is the case, please follow this optional step.
 
 #### Optional: Convert a plain code to Java code
 
-Select the file name `StringCalculatorTest` and press mouse click and Control button. Then, select **Override File Type**.
+Select the file name `StringCalculatorTest` and while holding the control button, click on the file name. Then, select **Override File Type**.
 
 ![Convert to different file type](./images/4_OverrideFileType1.jpg)
 
@@ -55,43 +55,43 @@ Then, select **Java**.
 
 ### Step 4: Fix Project Structure
 
-You probably also need to fix **Project Structure** by setting a right **Java Development Kit (JDK).** You can do that by clicking on **File** and select **Project Structure**.
+You probably also need to fix the **Project Structure** by setting the right **Java Development Kit (JDK).** You can do that by clicking on **File** and selecting **Project Structure**.
 
 ![Project Structure](./images/6_ProjectStructureGoto.jpg)
 
-Then, select **Project** and select a right **Project SDK**. 
+Then, select **Project** and select the right **Project SDK**. 
 
 ![No SDK](./images/7_NoSDK.jpg)
 
-In this case, I am using **Java 20 version 20.0.1**, but IntellJ also have an option to download JDK for you. You can click on **Download JDK** and select a right version of JDK.
+In this case, I am using **Java 20 version 20.0.1**, but IntellJ also has an option to download JDK for you. You can click on **Download JDK** and select a correct version of JDK.
 
 ![Install SDK](./images/8_InstallSDK.jpg)
 
 ### Step 5: Test out first test and fix it
 
-Now, you can run the test by right click on the test class `StringCalculatorTest` and select **Run 'StringCalculatorTest'**. Or, you can select an individual test function and run it by right click on the test function and select **Run 'add_TwoNumbers...'**.
+Now, you can run the test by right clicking on the test class `StringCalculatorTest` and selecting **Run 'StringCalculatorTest'**. Or, you can select an individual test function and run it by right clicking on the test function and selecting **Run 'add_TwoNumbers...'**.
 
 ![Run Test](./images/9_RunTest.jpg)
 
-You will see that the test fails because the test is expecting the result to be 1504, but the actual result is 1500. What is going on? Well, let's find out!
+You will see that the test fails because the test is expecting the result to be 1504, but the actual result is 1500. What's going on? Well, let's find out!
 
 ![Test Fail](./images/10_FirstTestWillFail.jpg)
 
-If you check the code in `StringCalculator` class, you will see that the `add` function just returns first `number`. So, how do we fix this?
+If you check the code in `StringCalculator` class, you will see that the `add` function just returns the first `number`. So, how do we fix this?
 
 ![Add Function incorrectness](./images/11_NeedToFix.jpg)
 
-No worry! GitHub Copilot is smart to fix this right away by just making a space after number. However, it is still your job to make sure that the code is correct. After all, your are the main pilot, not your Copilot.
+No worry! GitHub Copilot is smart enough to fix this right away by just making a space after number. However, it is still your job to make sure that the code is correct. After all, your are the main pilot, and Copilot is just your AI assistant.
 
 ![Copilot to the rescue](./images/12_SuggestionCopilot.jpg)
 
-After you took the suggestion, let's go back and run the test again. You can run the test by right click on the test class `StringCalculatorTest` and select **Run 'StringCalculatorTest'**. And it is successful this time! We just went from a failure to a success. That is a great progress!
+After you take the suggestion, let's go back and run the test again. You can run the test by right clicking on the test class `StringCalculatorTest` and selecting **Run 'StringCalculatorTest'**. And it is successful this time! We just went from a failure to a success. That is a great progress!
 
 ![Test Success](./images/13_MakeSuccessfulFirst.jpg)
 
 ### Step 6: Adding a second test function called concatenateTwoStrings
 
-Now, we will implement a second test function called `concatenateTwoStrings` that will concatenate two Strings. You can do that by adding a new test function in `StringCalculatorTest` class. After making new lines, just add `@Test`, and your Copilot is giving you some suggestions. 
+Now, we will implement a second test function called `concatenateTwoStrings` that will concatenate two Strings. You can do that by adding a new test function in the `StringCalculatorTest` class. After making new lines, just add `@Test`, and your Copilot is giving you some suggestions. 
 
 ![Add a second test](./images/14_AddSecondTest.jpg)
 
@@ -99,7 +99,7 @@ However, that is not what we want. Let's override by typing a test function name
 
 ![Override test function name](./images/15_OverrideSecondTest.jpg)
 
-Once we accepted the generated code, we have few options. IntelliJ does have a built-in feature to generate the code based on function name, etc, like this.
+Once we accept the generated code, we have a few options. IntelliJ does have a built-in feature to generate the code based on function name, etc, like this.
 
 ![IntelliJ built-in feature](./images/16_IntelliJHasOption.jpg)
 
@@ -107,21 +107,21 @@ But, we want to focus on Copilot driven development. So, let's go to `StringCalc
 
 ![Suggestion for function name](./images/17_CopilotAddSecondFunction.jpg)
 
-Run the test again, and it will become successful!. Great job.
+Run the test again, and it will become successful! Great job.
 
 ![Pass second test](./images/18_PassSecondTest.jpg)
 
 ### Step 7: Last exercise for implementing a third test function called findLargestNumberFromList
 
-We can stop from there, but let's maybe do one more exercise. We can implement a test and a code to find the largest number from a provided list. We start typing a test function name in `StringCalculatorTest` class.
+We could stop there, but let's do one more exercise. We can implement a unit test and a method to find the largest number from a provided list. We start typing a test function name in the `StringCalculatorTest` class.
 
 ![Add a third test](./images/19_AddThirdTest.jpg)
 
-Once if we are happy with what Copilot suggests, we can accept the solution. Just like last time, let's go create this function in `StringCalculator` class.
+Once we are happy with what Copilot suggests, we can accept the solution. Just like last time, let's go create this function in the `StringCalculator` class.
 
 ![Implement a third test](./images/20_NeedToAddThird.jpg)
 
-Although this is slightly more complex function, Copilot really makes this super easy. Just look at how fast it can generate the result
+Although this is a slightly more complex function, Copilot really makes this super easy. Just look at how fast it can generate the result.
 
 ![Copilot got it](./images/21_AddingThirdFunction.jpg)
 
@@ -129,7 +129,7 @@ Let's accept the solution.
 
 ![Accept the solution](./images/22_CompleteThirdFunction.jpg)
 
-Now, let's run the test again. And it is successful! Congratulation! You just finished Test Driven Development using GitHub Copilot.
+Now, let's run the test again. And it is successful! Congratulations! You just finished Test Driven Development using GitHub Copilot.
 
 ![Test Success](./images/23_PassThirdTest.jpg)
 
